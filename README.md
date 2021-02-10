@@ -42,7 +42,7 @@ Now that the students have a small enough sentence to start their journey in tal
 
 Have a discussion with the students until they realize/agree that our computer is the client making the request and Reddit's computer is the server sending back the response. 
 
-## HTTP Request-Response
+## HTTP Request-Response: The Request (15 Minutes)
 
 A good analogy to bring up at this point is a student going to McDonald's and asking the cashier for a Happy Meal. The student is the client and the cashier is the server. And when we order McDonalds, there are some rules regarding etiquette that we need to follow. People can't just hop over the counter and start yelling out their orders and throwing fries around. There's some protocols set in place and the same can be said for our computers. 
 
@@ -55,13 +55,55 @@ Then, show the Network tab on your browser. Find the first request being made to
 
 and mention that when it comes to making HTTP requests, you need both the URL and the Method/HTTP. Students should already have some exposure on what a URL is, but you should still mention that they can think about it as being the destination to which the request is going. It's the address that's on the packet being sent to Reddit. 
 
-However, the Request Method will require a bit more explanation.
+However, the Request Method will probably require a bit more explanation. For beginners, it is probably sufficient enough to say the Request Method is a description of what the client wants the server to do once that Request comes in.
+
+> For example, we are making a GET request to "https://www.reddit.com/r/Awww/". Our computer is saying that it wants to GET some cute pictures for it to display on the screen. When we want to do something else, like leave a comment on one of the pictures, the description of what our computer wants Reddit to do might change to something like a POST (Think POSTing something up on a bulletin board). The HTTP verbs are always descriptions from the perspective of the client and are standardized.
+
+Then, list out the four commonly used HTTP Verbs for the phase and write a short description for each of them:
+
+- GET: Get something on the server (Get the existing comments)
+- POST: Create some new information on the server (Create a comment)
+- PATCH: Update some existing information on the server (Update a comment)
+- DELETE: Delete some existing information on the server (Delete a comment)
+
+*NOTE: Students probably won't have any idea of what a database is, so it helps to keep it simple and describe it as accessing files on the computer.* 
+
+Stress to students that both the Method and the URL are necessary parts of one request. A POST request to "https://www.reddit.com/r/Awww/" is a different request to Reddit's computer than a GET request with the same URL. 
+
+## Break (5 Minutes)
+
+## Different Tools (10 Minutes)
+
+> As consumers, the most common HTTP Method that we have seen is GET. The address bar in our browser only knows how to make GET requests, so when we type in "https://www.reddit.com/r/Awww/", Google Chrome knows to make it into a GET request as that's the only thing it can really do. So, much like how there are different Word Processing applications out there (Apple Pages, Microsoft Word, Notepad), there's different kinds of applications capable of making request-responses. Take Google Chrome, Internet Explorer, Safari Firefox, Opera for example. They're all different applications that pretty much have the same job - to browse the web.
+
+Then, show students [Postman](https://www.postman.com/). Explain that Postman is very much like any other Web Browser - there's a place for you to type in the URL, just like an address bar and when you get a response back, you can see how the page would look like. However, one big difference is that there is a dropdown for you to change the HTTP Method of the request. First show the students how to make a GET request to "https://www.google.com/" and then, ask students to hypothesize what would happen if we were to make a DELETE request to "https://www.google.com/". Would we delete Google off of everyone's computer? Would Google block us? Hype up the discussion surrounding it a bit and then, when everyone's wondering what's going to happen, make the request.
+
+## Status Codes (5 Minutes)
+
+The request that Google sends back includes a status code of 405 - Method Not Allowed. This is a good time to start talking about Status Code, starting with the more famous sibling of 405 - 404. Since students will not be spending too much time building out their own API, you can mention: 
+
+> Status codes are also a description, much like the HTTP Method. However, rather than describing our request, the status code instead describes the response. What happened when our request got to Reddit or Google's computer? It got processed and Google said: "Oh, we don't like that you're trying to DELETE our website. Here's a 405 error instead." Or it might say: "Oh, we don't know what that URL is. Here's a 404 error instead." 
+
+- https://http.cat/
+- http://httpstatusrappers.com/
+- https://httpstatusdogs.com/
+
+are all great resources to share with students.   
+
+If you want to share with the students, you can also mention that there are different kinds of Status Codes, denoted by the digit in the 100s place:
+
+- 1xx - Informational response and the server is continuing to process it
+- 2xx - The request was successfully received
+- 3xx - More needs to be done to complete the request 
+- 4xx - The request is wrong
+- 5xx - The server failed
+
+
 
 
 
 
 ---
-
 
 * What is a server? What is a client?
 
