@@ -1,15 +1,22 @@
-# Introduction to the Internet
+# Introduction to the Internet 
 
 ## Objectives
   By the end of this lesson, SWBAT:
 - [ ] Differentiate between the roles of the client and the server in one request-response cycle
-- [ ] Describe the parts of an HTTP Request and their significances
+- [ ] Describe the parts of an HTTP Request object and their significances
+- [ ] Describe the parts of an HTTP Response object and their significances
 - [ ] Make three requests to one server, using different tools (`curl`, Postman, Browser)
 
 
-## Outline
+## Outline (Suggested Time: 60 Minutes)
 ```txt
-
+How do Websites Work? (10 Minutes)
+Naming the Parts (5 Minutes)
+Method + URL (15 Minutes)
+BREAK (5 Minutes)
+Different Tools (10 Minutes)
+Status Codes (5 Minutes)
+The Possible Responses (15 Minutes)
 ```
 
 ## How do Websites Work? (10 Minutes)
@@ -127,24 +134,3 @@ Hopefully, in seeing the information in the Terminal, students can get a visuali
 - Students might not understand when to use Postman to make non-GET requests. GET requests might be intuitive, but the idea of a non-GET request may seem strange at first. 
 - Students might not remember that both the HTTP Verb and the URL make a request - students might often try to go to a given URL for a POST request on the browser, forgetting that the the address bar can only make GET requests.
 - Students often forget about status codes because they're usually dealing with structuring the request and letting external APIs handle the response along with the status codes.
-
-
-
--- 
-
-* What is a server? What is a client?
-
-* What is the request / response cycle?
-
-* With a client and server, which makes the request? Which sends the response?
-
-* What is a HTTP request? Make a few, using at least two of these tools: Google Chrome, Postman, curl
-
-* What are the parts of a HTTP request
-  * Use a web browser to find the headers for an HTTP request. What do you think these headers do?
-  * What is usually in the body of an HTTP _response_?
-  * What is a HTTP status code? What do the codes 200, 404, 500, 503, 302, 422 and 418 mean?
-    * https://http.cat/
-  * Why do we use HTTP verbs? What is the difference between what GET, POST, PUT, PATCH, and DELETE requests do?
-
-* What's the difference between static and dynamic websites? What are some of the benefits of a dynamic website?
