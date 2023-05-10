@@ -62,7 +62,7 @@ Then, show the Network tab on your browser. Find the first request being made to
 
 and mention that when it comes to making HTTP requests, you need both the URL and the Method/HTTP. Students should already have some exposure on what a URL is, but you should still mention that they can think about it as being the destination to which the request is going. It's the address that's on the packet being sent to Reddit. 
 
-However, the Request Method will probably require a bit more explanation. For beginners, it is probably sufficient enough to say the Request Method is a description of what the client wants the server to do once that Request comes in.
+However, the [Request Method](https://http.dev/methods) will probably require a bit more explanation. For beginners, it is probably sufficient enough to say the Request Method is a description of what the client wants the server to do once that Request comes in.
 
 > For example, we are making a GET request to "https://www.reddit.com/r/Awww/". Our computer is saying that it wants to GET some cute pictures for it to display on the screen. When we want to do something else, like upload a picture of our cat, the description of what our computer wants Reddit to do might change to something like a POST (Think POSTing something up on a bulletin board). The HTTP verbs are always descriptions from the perspective of the client and are standardized.
 
@@ -93,11 +93,12 @@ The response that Google sends back includes a status code of 405 - Method Not A
 
 - https://http.cat/
 - http://httpstatusrappers.com/
-- https://httpstatusdogs.com/
+- https://http.dog/
+- https://httpgoats.com/
 
 are all great resources to share with students.   
 
-If you want to share with the students, you can also mention that there are different kinds of Status Codes, denoted by the digit in the hundreds place:
+If you want to share with the students, you can also mention that there are different kinds of [Status Codes](https://http.dev/status), denoted by the digit in the hundreds place:
 
 - 1xx - Informational response and the server is continuing to process it
 - 2xx - The request was successfully received
