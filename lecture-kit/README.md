@@ -39,7 +39,8 @@ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) 
 
 - [Postman](https://www.postman.com/)
 - [Cat Status Codes](https://http.cat/)
-- [Dog Status Codes](https://httpstatusdogs.com/)
+- [Dog Status Codes](https://http.dog)
 - [Rapper Status Codes](http://httpstatusrappers.com/)
+- [Goat Status Codes](https://httpgoats.com/)
 
 
